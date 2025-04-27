@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Notificación</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body>
+    <header>
+        <h1>Editar Notificación</h1>
+    </header>
+    <main>
+        <section>
+            <form action="/notificacion/modificar" method="POST">
+                <label for="estado">Estado:</label>
+                <select id="estado" name="estado">
+                    <option value="Activa" <%= notificacio.estat === "Activa" ? "selected" : "" %>>Activa</option>
+                    <option value="Inactiva" <%= notificacio.estat === "Inactiva" ? "selected" : "" %>>Inactiva</option>
+                </select>
+
+                <label for="fechaInicio">Fecha de inicio:</label>
+                <input type="date" id="fechaInicio" name="fechaInicio" value="<%= notificacio.fInici %>" required>
+
+                <label for="fechaFinal">Fecha final:</label>
+                <input type="date" id="fechaFinal" name="fechaFinal" value="<%= notificacio.fFinal %>" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required><%= notificacio.missatge %></textarea>
+
+                <button type="submit">Actualizar</button>
+            </form>
+            <a href="/notificacions" class="btn">Volver</a>
+        </section>
+    </main>
+</body>
+</html>

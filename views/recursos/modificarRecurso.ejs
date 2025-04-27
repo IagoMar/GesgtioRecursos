@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualizar Recurso</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <main class="main-content">
+        <section class="form-container">
+            <header class="form-header">
+                <h2>Actualiza los detalles del recurso</h2>
+            </header>
+            <form action="/recurso/modificar" method="POST">
+                <div class="form-group">
+                    <label for="nom">Nombre del recurso:</label>
+                    <input type="text" id="nom" name="nom" value="<%= recurso.nom %>" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="estat">Estado del recurso:</label>
+                    <select id="estat" name="estat">
+                        <option value="Disponible" <%= recurso.estat === "Disponible" ? "selected" : "" %>>Disponible</option>
+                        <option value="Ocupado" <%= recurso.estat === "Ocupado" ? "selected" : "" %>>Ocupado</option>
+                        <option value="Reservado" <%= recurso.estat === "Reservado" ? "selected" : "" %>>Reservado</option>
+                        <option value="En reparación" <%= recurso.estat === "En reparación" ? "selected" : "" %>>En reparación</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="categoria">Categoría del recurso:</label>
+                    <input type="text" id="categoria" name="categoria" value="<%= recurso.categoria %>" required>
+                </div>
+
+                <button type="submit" class="submit-btn">Guardar cambios</button>
+            </form>
+            <a href="/recursos" class="back-link">Volver a la lista de recursos</a>
+        </section>
+    </main>
+</body>
+</html>

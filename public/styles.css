@@ -1,0 +1,169 @@
+/* ====== GENERAL ====== */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #ff6f61;
+    margin: 0;
+    padding: 0;
+    color: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    background-color: #e63946;
+    color: #f1faee;
+    padding: 20px 10px;
+    text-align: center;
+    box-shadow: none;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+header h2 {
+    font-size: 1rem;
+    margin-top: 8px;
+    font-weight: normal;
+    color: #f1faee;
+}
+
+main {
+    width: 95%;
+    max-width: 1000px;
+    background-color: white;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: none;
+}
+
+main h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #e63946;
+    padding-bottom: 4px;
+}
+
+.product-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.product-item {
+    background: #ffb4a2;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-left: 4px solid #e76f51;
+    border-radius: 6px;
+    box-shadow: none;
+    transition: none;
+}
+
+.product-item:hover {
+    background-color: #ff8a75;
+}
+
+.product-item strong {
+    font-size: 1.1rem;
+    color: #9b2226;
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* ====== TAGS ====== */
+.product-item span {
+    display: inline-block;
+    font-size: 0.85rem;
+    margin-right: 8px;
+    margin-bottom: 4px;
+    padding: 4px 8px;
+    border-radius: 15px;
+    background-color: #f4a261;
+    color: #7f4a00;
+}
+
+span.estat {
+    background-color: #2a9d8f;
+    color: #e0fbfc;
+}
+
+span.categoria {
+    background-color: #264653;
+    color: #f4f1de;
+}
+
+span.rol {
+    background-color: #e9c46a;
+    color: #6b4226;
+}
+
+a {
+    display: inline-block;
+    margin-top: 8px;
+    margin-right: 12px;
+    padding: 6px 12px;
+    background-color: #e76f51;
+    color: #f1faee;
+    text-decoration: none;
+    font-weight: normal;
+    border-radius: 4px;
+    transition: none;
+}
+
+a:hover {
+    background-color: #d65a3f;
+}
+
+/* ====== FORMULARIOS ====== */
+form {
+    width: 95%;
+    max-width: 600px;
+    background-color: white;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form label {
+    font-weight: normal;
+    color: #1a1a1a;
+    font-size: 0.9rem;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #e76f51;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    background-color: #fff5f0;
+}
+
+form button {
+    width: fit-content;
+    align-self: center;
+    padding: 8px 16px;
+    margin-bottom: 12px;
+    background-color: #e76f51;
+    color: #f1faee;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: none;
+}
+
+form button:hover {
+    background-color: #d65a3f;
+}

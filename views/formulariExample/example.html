@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularioo</title>
+</head>
+
+<body>
+    <form id="formularioCorreo">
+        <label for="emailInput">Correo Electrónico:</label>
+        <input type="email" id="emailInput" required>
+        <span id="errorEmail" style="color: red;"></span>
+        <button type="submit">Enviar</button>
+    </form>
+    <script>
+        const emailField = document.getElementById("emailInput");
+        const errorMessage = document.getElementById("errorEmail");
+
+        // Al salir del campo, validamos el email
+        emailField.addEventListener("blur", function (event) {
+            if (!emailField.checkValidity()) {
+                event.preventDefault();  // Impide el envío
+                errorMessage.innerText = "Por favor, introduce un correo válido.";
+            } else {
+                errorMessage.innerText = "";
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestió de Reserves</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <main>
+        <h1>Gestió de Reserves</h1>
+        <ul class="list">
+            <% data.reserves.forEach(reserva => { %>
+                <li>
+                    <p><strong>Usuari:</strong> <%= reserva.usuari %></p>
+                    <p><strong>Data inici:</strong> <%= reserva.data_inici %></p>
+                    <p><strong>Data final:</strong> <%= reserva.data_final %></p>
+                    <p><strong>Estat:</strong> <%= reserva.estat %></p>
+                    <p><strong>Notificació:</strong> <%= reserva.notificacio %></p>
+                    <a href="/reserves/<%= reserva.id %>">Detall Reserva</a>
+                    <a href="/reserves/put/<%= reserva.id %>">Modificar Reserva</a>
+                </li>
+            <% }) %>
+        </ul>
+        <a href="/" class="btn">Volver a la Home</a>
+    </main>
+</body>
+</html>

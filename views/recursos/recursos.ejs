@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <style>
+        /* Added styles to increase spacing between buttons and links */
+        main ul li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        main ul li a {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h2>Lista de Recursos</h2>
+        <ul>
+            <% data.recursos.forEach(recurso => { %>
+                <li>
+                    <span><%= recurso.nom %> - <%= recurso.estat %> - <%= recurso.categoria %></span>
+                    <a href="/recursos/<%= recurso.id %>">Detalles</a>
+                    <a href="/recursos/put/<%= recurso.id %>">Modificar</a>
+                </li>
+            <% }) %>
+        </ul>
+        <a href="/" class="btn">Volver a la Home</a>
+    </main>
+</body>
+
+</html>
