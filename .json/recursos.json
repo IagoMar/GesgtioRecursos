@@ -1,0 +1,28 @@
+{
+  "recursos": [
+    {
+      "id": 1,
+      "nom": "Cámara Fotográfica Canon",
+      "estat": "Disponible",
+      "categoria": "Fotografía"
+    },
+    {
+      "id": 2,
+      "nom": "Sofá de Tres Plazas",
+      "estat": "Ocupado",
+      "categoria": "Mobiliario"
+    },
+    {
+      "id": 3,
+      "nom": "Lámpara de Pie",
+      "estat": "Ocupado",
+      "categoria": "Decoración"
+    },
+    {
+      "id": 4,
+      "nom": "Sistema de Sonido Bose",
+      "estat": "Ocupado",
+      "categoria": "Electrónica"
+    }
+  ]
+}

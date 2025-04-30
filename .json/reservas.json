@@ -1,0 +1,44 @@
+{
+  "reserves": [
+    {
+      "id": 1,
+      "usuari": "Pedro Gonzalez",
+      "data_inici": "2024-05-05",
+      "data_final": "2024-05-07",
+      "estat": "activa",
+      "notificacio": "si"
+    },
+    {
+      "id": 2,
+      "usuari": "Laura Lopez",
+      "data_inici": "2024-05-10",
+      "data_final": "2024-05-12",
+      "estat": "completada",
+      "notificacio": "no"
+    },
+    {
+      "id": 3,
+      "usuari": "Carlos Ruiz",
+      "data_inici": "2024-05-15",
+      "data_final": "2024-05-16",
+      "estat": "pendent",
+      "notificacio": "no"
+    },
+    {
+      "id": 4,
+      "usuari": "Ana Martinez",
+      "data_inici": "2024-05-20",
+      "data_final": "2024-05-20",
+      "estat": "cancel·lada",
+      "notificacio": "no"
+    },
+    {
+      "id": 5,
+      "usuari": "Javier Perez",
+      "data_inici": "2024-05-25",
+      "data_final": "2024-05-27",
+      "estat": "activa",
+      "notificacio": "si"
+    }
+  ]
+}
